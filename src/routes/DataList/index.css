@@ -1,0 +1,17 @@
+.container {
+  width: 90%;
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+  background-color: rgba(241, 242, 245);
+  position: absolute;
+  top: 7%;
+  left: 5%;
+  border: 1px solid #e8e8e8;
+  box-sizing: border-box;
+  border-radius: 2px;
+  box-shadow: rgba(53, 56, 58, 0.1) 0px 0px 19px 0px;
+}
+ 

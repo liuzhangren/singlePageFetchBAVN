@@ -68,7 +68,7 @@ export default class IndexPage extends React.Component {
         <Card
           title={
             <>
-              记录查询
+              BAVN 查询
               <Search 
                 placeholder="输入查询内容..."
                 enterButton="Search"

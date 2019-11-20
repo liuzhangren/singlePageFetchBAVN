@@ -6,6 +6,7 @@ import {
 } from 'antd'
 import style from './index.css'
 import { connect } from 'dva'
+import dayjs from 'dayjs'
 
 const { Search } = Input
 
@@ -21,34 +22,37 @@ export default class IndexPage extends React.Component {
     }
     this.columns = [
       {
-        title: '资产id',
+        title: 'id',
         width: '5%',
         dataIndex: 'asset_id',
         align: 'center'
       },
       {
-        title: '区块序号',
+        title: 'block',
         width: '5%',
         dataIndex: 'block_id',
         align: 'center'
       },
       {
-        title: '资产变化额度',
+        title: 'alter',
         width: '5%',
         dataIndex: 'amount_altered',
         align: 'center'
       },
       {
-        title: '当前余额',
+        title: 'balance',
         width: '5%',
         dataIndex: 'balance',
         align: 'center'
       },
       {
-        title: '时间',
+        title: 'time',
         width: '5%',
         dataIndex: 'time',
-        align: 'center'
+        align: 'center',
+        render: (value) => {
+          return dayjs(value).format('YYYY-MM-DD HH:mm:ss')
+        }
       }
     ]
   }
@@ -59,7 +63,6 @@ export default class IndexPage extends React.Component {
     })
   }
   render() {
-    console.log(this.props)
     return (
       <div className={style.container}>
         <Card

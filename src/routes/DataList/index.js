@@ -63,6 +63,31 @@ export default class IndexPage extends React.Component {
     })
   }
   render() {
+    const dataList= [
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+    ]
     return (
       <div className={style.container}>
         <Card
@@ -92,7 +117,7 @@ export default class IndexPage extends React.Component {
             tableLayout='fixed'
             width='90%'
             columns={this.columns}
-            dataSource={this.props.example.dataList}
+            dataSource={dataList}
           />
         </Card>
       </div>
